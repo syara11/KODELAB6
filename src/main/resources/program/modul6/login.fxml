@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml" fx:controller="program.modul6.HelloController">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+    <Text text="Halaman Login" GridPane.columnSpan="2" GridPane.rowIndex="0" GridPane.halignment="CENTER"/>
+    <Label text="User Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="userTextField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Password:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <PasswordField fx:id="pwBox" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="Sign in" onAction="#handleButtonAction" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+    <Text fx:id="actiontarget" GridPane.rowIndex="6" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+</GridPane>
